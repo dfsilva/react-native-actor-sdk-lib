@@ -1,17 +1,22 @@
-
 {
   "name": "react-native-actor-sdk-lib",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "React Native library for actor sdk",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": {
+    "name": "Diego Silva",
+    "email": "diego@diegosilva.com.br"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "actor",
+    "actor-sdk"
   ],
-  "author": "",
-  "license": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfsilva/react-native-actor-sdk-lib.git"
+  }
   "peerDependencies": {
     "react-native": "^0.41.2"
   }

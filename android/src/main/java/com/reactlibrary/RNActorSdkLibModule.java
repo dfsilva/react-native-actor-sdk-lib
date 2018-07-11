@@ -1,6 +1,8 @@
 
 package com.reactlibrary;
 
+import android.util.Log;
+
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -19,4 +21,25 @@ public class RNActorSdkLibModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNActorSdkLib";
   }
+
+
+
+  @ReactMethod
+  public void startMessenger(){
+    Log.d(RNActorSdkLibModule.class.getName(), "Metodo do modulo !!!!!");
+  }
+
+  @ReactMethod
+  public void sendMessage(String message, Callback callback){
+
+    try {
+      Thread.sleep(5000);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+
+    callback.invoke("Mensagem enviada com sucesso!");
+
+  }
+
 }
