@@ -4,10 +4,10 @@ import { NativeModules } from 'react-native';
 const { RNActorSdkLib } = NativeModules;
 
 export default {
-    startMessenger: function () {
-        //RNActorSdkLib.startMessenger()
+    startMessenger: () => {
+        RNActorSdkLib.startMessenger()
     },
-    sendMessage: function(message, callback){
-        //RNActorSdkLib.sendMessage(message, callback)
+    sendMessage: (message, callback) =>{
+        RNActorSdkLib.sendMessage(message, callback)
     }
 };
